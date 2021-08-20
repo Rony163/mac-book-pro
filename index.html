@@ -6,44 +6,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iMAC</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <main>
-        <section class="">
-            <div>
-                <img height="400px" width="400px" src="images/mac.png" alt="">
+        <section class="display">
+            <div class="imgWidth">
+                <img src="images/mac.png" alt="">
             </div>
-            <div>
+            <div class="textWidth">
                 <h1>Customize your Blue 24-inch iMAC with Apple M1 chip.</h1>
                 <p>Apple M1 chip with 8-core CPU with 4 performance core and 4 efficiency cores, 7-core GPU, and 16-core
                     Neural Engine 8GB unified memory 256GB SSD storage Two Thunderbolt/USB 4 ports Magic Mouse Keyboard
                     US English</p>
+                <h3>Memory</h3>
+                <button id="8gb-btn">8GB unified memory</button>
+                <button id="16gb-btn">16GB unified memory</button>
+                <h3>Storage</h3>
+                <button id="256gb-btn">256GB SSD storage</button>
+                <button id="512gb-btn">512GB SSD storage</button>
+                <button id="1tb-btn">1TB SSD storage</button>
+                <h3>Choose your delivery option</h3>
+                <button id="free-btn">Friday,Aug 25 FREE Prime Delivery</button>
+                <button id="charge-btn">Friday,Aug 21 Delivery charge $20</button>
+                <br>
+                <h4>Best Price $ <span id="best-price">1299</span> </h4>
+                <h4>Extra Memory Cost $ <span id="extra-memory">0</span> </h4>
+                <h4>Extra Storage Cost $ <span id="extra-storage">0</span> </h4>
+                <h4>Delivery charge $ <span id="extra-cost">0</span> </h4>
+                <h4>Total Price $ <span id="total-price">1299</span> </h4>
+                <p>Add Promo code</p>
+                <br>
+                <input type="text">
+                <button>Apply</button>
             </div>
         </section>
         <section>
-            <h3>Memory</h3>
-            <button id="8gb-btn">8GB unified memory</button>
-            <button id="16gb-btn">16GB unified memory</button>
-            <h3>Storage</h3>
-            <button id="256gb-btn">256GB SSD storage</button>
-            <button id="512gb-btn">512GB SSD storage</button>
-            <button id="1tb-btn">1TB SSD storage</button>
-            <h3>Choose your delivery option</h3>
-            <button id="free-btn">Friday,Aug 25 FREE Prime Delivery</button>
-            <button id="charge-btn">Friday,Aug 21 Delivery charge $20</button>
-            <br>
-            <h4>Best Price $ <span id="best-price">1299</span> </h4>
-            <h4>Extra Memory Cost $ <span id="extra-memory">0</span> </h4>
-            <h4>Extra Storage Cost $ <span id="extra-storage">0</span> </h4>
-            <h4>Delivery charge $ <span id="extra-cost">0</span> </h4>
-            <h4>Total Price $ <span id="total-price">1299</span> </h4>
-            <p>Add Promo code</p>
-            <br>
-            <input type="text">
-            <button>Apply</button>
             <hr>
-            <h1>Total: $ <span>1299</span> </h1>
+            <h1 class="finalTotal">Total: $ <span>1299</span> </h1>
         </section>
     </main>
 

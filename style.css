@@ -1,0 +1,18 @@
+.display{
+    display: flex;
+}
+.imgWidth{
+    width: 100%;
+}
+.imgWidth img{
+    display: block;
+    margin: auto;
+    height: 400px;
+    width: 400px;
+}
+.textWidth{
+    width: 100%;
+}
+.finalTotal{
+    text-align: center;
+}
