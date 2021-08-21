@@ -13,7 +13,7 @@ function calculation() {
     document.getElementById('total-cost').innerText = cost;
     document.getElementById('all-total').innerText = cost;
 }
-// extra memory cost
+// extra Memory cost
 function extraMemoryCost(value) {
     const extraMemory = document.getElementById('memory-cost');
     if (value == true) {
@@ -24,7 +24,7 @@ function extraMemoryCost(value) {
     }
     calculation();
 }
-// extra storage cost
+// extra Storage cost
 function extraStorageCost(value) {
     const extraStorage = document.getElementById('storage-cost');
     if (value == 0) {
@@ -49,7 +49,7 @@ function extraDeliveryCost(value) {
     }
     calculation();
 }
-// memory
+// memory button handling
 document.getElementById('8gb-btn').addEventListener('click', function () {
     extraMemoryCost(true);
 });
@@ -57,7 +57,7 @@ document.getElementById('16gb-btn').addEventListener('click', function () {
     extraMemoryCost(false);
 });
 
-// storage
+// storage button handling
 document.getElementById('256gb-btn').addEventListener('click', function () {
     extraStorageCost(0);
 });
@@ -67,14 +67,14 @@ document.getElementById('512gb-btn').addEventListener('click', function () {
 document.getElementById('1tb-btn').addEventListener('click', function () {
     extraStorageCost(180);
 });
-// delivery charge
+// delivery charge button handling
 document.getElementById('free-btn').addEventListener('click', function () {
     extraDeliveryCost(true);
 });
 document.getElementById('charge-btn').addEventListener('click', function () {
     extraDeliveryCost(false);
 });
-// discount
+// discount button handling
 document.getElementById('apply-btn').addEventListener('click', function () {
     const applyInput = document.getElementById('apply-input').value;
     if (applyInput.toLowerCase() == 'stevekaku'.toLowerCase()) {

@@ -1,18 +1,38 @@
-.display{
-    display: flex;
+/* All Button Style */
+.button{
+    padding: 5px;
+    border: 2px solid darkorchid;
 }
-.imgWidth{
-    width: 100%;
+.button:hover{
+    background-color: gray;
+    color: white;
 }
-.imgWidth img{
-    display: block;
-    margin: auto;
-    height: 400px;
-    width: 400px;
+
+/* Tabble style */
+.table-pricing{
+    font-weight: bold;
+    height: 0px;
+   }
+table {
+    border-collapse: collapse;
+    width: 60%;
 }
-.textWidth{
-    width: 100%;
+td {
+    padding: 0px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+.deliveryRow{
+    border-bottom: 2px solid gray;
 }
-.finalTotal{
-    text-align: center;
+.hr{
+    border-bottom: none;
+}
+
+/* Discount Style */
+.apply{
+    background-color: tomato;
+}
+.apply:hover{
+    background-color: aqua;
 }
