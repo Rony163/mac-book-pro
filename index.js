@@ -81,6 +81,9 @@ document.getElementById('apply-btn').addEventListener('click', function () {
         document.getElementById('apply-input').value = '';
         const finalTotal = parseInt(document.getElementById('all-total').innerText);
         document.getElementById('all-total').innerText = finalTotal - (finalTotal * 20 / 100);
+        // for disabled the input field and button after using prome code
+        document.getElementById('apply-input').setAttribute('disabled', true);
+        document.getElementById('apply-btn').setAttribute('disabled', true);
     } else {
         document.getElementById('apply-input').value = '';
     }
