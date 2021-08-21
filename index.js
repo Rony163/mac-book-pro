@@ -7,6 +7,7 @@ function calculation() {
     document.getElementById('total-cost').innerText = cost;
     document.getElementById('all-total').innerText = cost;
 }
+
 // memory
 document.getElementById('8gb-btn').addEventListener('click', function () {
     const extraMemory = document.getElementById('memory-cost');
