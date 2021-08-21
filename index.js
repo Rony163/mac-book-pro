@@ -12,6 +12,8 @@ function calculation() {
     const cost = parseInt(bestCost) + parseInt(memoryCost) + parseInt(storageCost) + parseInt(deliveryCost);
     document.getElementById('total-cost').innerText = cost;
     document.getElementById('all-total').innerText = cost;
+    // for enable the input button  after selecting new button
+    document.getElementById('apply-btn').removeAttribute('disabled');
 }
 // extra Memory cost
 function extraMemoryCost(value) {
@@ -81,8 +83,7 @@ document.getElementById('apply-btn').addEventListener('click', function () {
         document.getElementById('apply-input').value = '';
         const finalTotal = parseInt(document.getElementById('all-total').innerText);
         document.getElementById('all-total').innerText = finalTotal - (finalTotal * 20 / 100);
-        // for disabled the input field and button after using prome code
-        document.getElementById('apply-input').setAttribute('disabled', true);
+        // for disabled the input button  after using prome code
         document.getElementById('apply-btn').setAttribute('disabled', true);
     } else {
         document.getElementById('apply-input').value = '';
